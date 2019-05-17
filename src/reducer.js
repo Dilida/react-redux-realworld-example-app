@@ -1,22 +1,21 @@
-import article from './reducers/article';
-import articleList from './reducers/articleList';
+
+import orderInfo from './reducers/orderInfo';
 import auth from './reducers/auth';
 import { combineReducers } from 'redux';
 import common from './reducers/common';
-import editor from './reducers/editor';
+import shoppingCart from './reducers/shoppingCart';
 import home from './reducers/home';
-import profile from './reducers/profile';
-import settings from './reducers/settings';
+import profile from './reducers/product';
+import product from './reducers/product';
 import { routerReducer } from 'react-router-redux';
 
 export default combineReducers({
-  article,
-  articleList,
+  orderInfo,
   auth,
   common,
-  editor,
+  shoppingCart,
   home,
   profile,
-  settings,
+  product,
   router: routerReducer
 });

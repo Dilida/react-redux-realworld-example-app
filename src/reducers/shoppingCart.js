@@ -4,7 +4,7 @@ import {
   LOGIN_PAGE_UNLOADED,
   REGISTER_PAGE_UNLOADED,
   ASYNC_START,
-  ASYNC_END,
+    ASYNC_END,
   UPDATE_FIELD_AUTH
 } from '../constants/actionTypes';
 
@@ -26,7 +26,7 @@ export default (state = {}, action) => {
       }
       break;
     case ASYNC_END:
-      return { ...state, inProgress: false };
+        return { ...state, inProgress: false };
       break;
     case UPDATE_FIELD_AUTH:
       return { ...state, [action.key]: action.value };
