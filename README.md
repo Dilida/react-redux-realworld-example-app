@@ -56,18 +56,19 @@ The example application is a social blogging site (i.e. a Medium.com clone) call
     - List of tags
     - List of articles pulled from either Feed, Global, or by Tag
     - Pagination for list of articles
-- Sign in/Sign up pages (URL: /#/login, /#/register )
-    - Use JWT (store the token in localStorage)
-- Settings page (URL: /#/settings )
-- Editor page to create/edit articles (URL: /#/editor, /#/editor/article-slug-here )
-- Article page (URL: /#/article/article-slug-here )
-    - Delete article button (only shown to article's author)
-    - Render markdown from server client side
-    - Comments section at bottom of page
-    - Delete comment button (only shown to comment's author)
-- Profile page (URL: /#/@username, /#/@username/favorites )
-    - Show basic user info
-    - List of articles populated from author's created articles or author's favorited articles
+- components/Common
+    - 放所有共用的component
+- components/Layout
+    - 放所有的Layout
+- agent.js
+    - 使用superagent call api，放置全站所有的api
+- middleware.js
+    - 若是有透過redux call api，可處理error handle部分
+    - async start / async end 控制api是否已回傳，可handle loading 畫面
+    - login/logout 透過middleware 可直接再處理sessionStorage
+- redux 分成五大部分
+    - 用不到redux的頁面不引入
+    - 可分開引用，不一定要引用全站狀態管理
 
 <br />
 
