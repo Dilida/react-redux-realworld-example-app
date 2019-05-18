@@ -1,5 +1,5 @@
 {
-  "name": "react-redux-realworld-example-app",
+  "name": "17mymai",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -7,6 +7,7 @@
     "react-scripts": "1.1.1"
   },
   "dependencies": {
+    "node-sass": "^4.11.0",
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
     "history": "^4.6.3",
@@ -29,9 +30,9 @@
     "superagent-promise": "^1.1.0"
   },
   "scripts": {
-    "start": "cross-env PORT=4100 react-scripts start",
+    "start": "cross-env react-scripts start",
     "build": "react-scripts build",
-    "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
+    "test": "cross-env react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
 }

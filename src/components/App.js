@@ -1,5 +1,5 @@
 import agent from '../agent';
-import React , {Component} from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { APP_LOAD, REDIRECT } from '../constants/actionTypes';
 import { Switch } from 'react-router-dom';
@@ -7,9 +7,6 @@ import PrivateRoute from './Common/PrivateRoute'
 import { store } from '../store';
 import { push } from 'react-router-redux';
 import routes from '../components/routes'
-import { Route } from 'react-router-dom'
-
-import HomeLayout from '../components/Layout/HomeLayout'
 
 const mapStateToProps = state => {
   return {
