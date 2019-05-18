@@ -8,7 +8,7 @@ const routes = [
         exact: true,
         component:Home,
         authNeed: false,
-        layout: "HomeLayout"
+        layout: HomeLayout
     }
 ]
 export default routes

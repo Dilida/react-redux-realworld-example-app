@@ -31,7 +31,6 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home-page">
-
        this is homepage
       </div>
     );

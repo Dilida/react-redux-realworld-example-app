@@ -4,8 +4,6 @@ import { Route } from 'react-router-dom'
 import { Redirect } from 'react-router'
 import { connect } from 'react-redux';
 
-
-
 class PrivateRoute extends React.Component {
     constructor(props) {
         super(props);
@@ -23,11 +21,11 @@ class PrivateRoute extends React.Component {
             );
         } else {
             return (
-                <Route
-                    path={path}
-                    exact={exact}
-                    render={(props) => <this.props.component {...props} />}
-                />
+                <Route exact={exact} path={path} render= { ({props})=> 
+                    <this.props.layout>
+                        <this.props.component {...props} />
+                    </this.props.layout>
+                  }/>
             );
         }
 
